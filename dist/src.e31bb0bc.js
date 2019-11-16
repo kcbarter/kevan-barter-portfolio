@@ -24138,7 +24138,9 @@ function (_Component) {
   _createClass(Nav, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("a", null, "Portfolio")), _react.default.createElement("li", null, _react.default.createElement("a", null, "Contact"))));
+      return _react.default.createElement("div", {
+        id: "nav"
+      }, _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("a", null, "Portfolio")), _react.default.createElement("li", null, _react.default.createElement("a", null, "Contact"))));
     }
   }]);
 
@@ -24165,7 +24167,7 @@ var _linkedIn = _interopRequireDefault(require("../images/linkedIn.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Links = [{
+var LINKS = [{
   id: 1,
   link: 'https://www.linkedin.com/in/kevanbarter/',
   image: _GitHub.default
@@ -24174,7 +24176,7 @@ var Links = [{
   link: 'https://github.com/kcbarter',
   image: _linkedIn.default
 }];
-var _default = Links;
+var _default = LINKS;
 exports.default = _default;
 },{"../images/GitHub.png":"images/GitHub.png","../images/linkedIn.jpg":"images/linkedIn.jpg"}],"components/Links.js":[function(require,module,exports) {
 "use strict";
@@ -24272,9 +24274,7 @@ function (_Component) {
     value: function render() {
       return _react.default.createElement("div", null, _react.default.createElement("h1", {
         id: "name"
-      }, "Kevan Barter"), _react.default.createElement(_Links.default, null), _react.default.createElement("div", {
-        id: "nav"
-      }, _react.default.createElement(_Nav.default, null)), _react.default.createElement("div", {
+      }, "Kevan Barter"), _react.default.createElement(_Nav.default, null), _react.default.createElement("div", {
         id: "bio"
       }, _react.default.createElement("p", {
         id: "info"
@@ -24328,7 +24328,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56865" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57151" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

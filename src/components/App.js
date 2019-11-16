@@ -9,10 +9,9 @@ class App extends Component{
     return(
       <div>
         <h1 id="name">Kevan Barter</h1>
-        <Links />
-        <div id="nav">
-          <Nav />
-        </div>
+        {/* <Links /> */}
+        
+        <Nav />
         <div id="bio">
           <p id="info">
             I am a Certified Scrum Master with my Bachelors degree in Software Development. 

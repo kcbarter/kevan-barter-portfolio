@@ -1,7 +1,7 @@
 import GitHub from '../images/GitHub.png';
 import linkedIn from '../images/linkedIn.jpg';
 
-const Links = [
+const LINKS = [
     {
         id: 1,
         link: 'https://www.linkedin.com/in/kevanbarter/',
@@ -14,4 +14,4 @@ const Links = [
     }
 ]
 
-export default Links;
+export default LINKS;
