@@ -1,16 +1,16 @@
-import GitHub from '../images/GitHub.png';
-import linkedIn from '../images/linkedIn.jpg';
+import GitHub from '../images/Github.png';
+import linkedIn from '../images/LinkedIn.png';
 
 const LINKS = [
     {
         id: 1,
         link: 'https://www.linkedin.com/in/kevanbarter/',
-        image: GitHub
+        image: linkedIn
     },
     {
         id: 2,
         link: 'https://github.com/kcbarter',
-        image: linkedIn
+        image: GitHub
     }
 ]
 

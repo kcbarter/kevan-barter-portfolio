@@ -24149,10 +24149,10 @@ function (_Component) {
 
 var _default = Nav;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"images/GitHub.png":[function(require,module,exports) {
-module.exports = "/GitHub.5a33b85d.png";
-},{}],"images/linkedIn.jpg":[function(require,module,exports) {
-module.exports = "/linkedIn.941c2166.jpg";
+},{"react":"../node_modules/react/index.js"}],"images/Github.png":[function(require,module,exports) {
+module.exports = "/Github.4200b9e0.png";
+},{}],"images/LinkedIn.png":[function(require,module,exports) {
+module.exports = "/LinkedIn.f37dbc03.png";
 },{}],"data/links.js":[function(require,module,exports) {
 "use strict";
 
@@ -24161,24 +24161,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _GitHub = _interopRequireDefault(require("../images/GitHub.png"));
+var _Github = _interopRequireDefault(require("../images/Github.png"));
 
-var _linkedIn = _interopRequireDefault(require("../images/linkedIn.jpg"));
+var _LinkedIn = _interopRequireDefault(require("../images/LinkedIn.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var LINKS = [{
   id: 1,
   link: 'https://www.linkedin.com/in/kevanbarter/',
-  image: _GitHub.default
+  image: _LinkedIn.default
 }, {
   id: 2,
   link: 'https://github.com/kcbarter',
-  image: _linkedIn.default
+  image: _Github.default
 }];
 var _default = LINKS;
 exports.default = _default;
-},{"../images/GitHub.png":"images/GitHub.png","../images/linkedIn.jpg":"images/linkedIn.jpg"}],"components/Links.js":[function(require,module,exports) {
+},{"../images/Github.png":"images/Github.png","../images/LinkedIn.png":"images/LinkedIn.png"}],"components/Links.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24197,7 +24197,8 @@ var Link = function Link(props) {
       link = _props$links.link,
       image = _props$links.image;
   return _react.default.createElement("span", null, _react.default.createElement("span", null, _react.default.createElement("a", {
-    href: link
+    href: link,
+    target: "_blank"
   }, _react.default.createElement("img", {
     src: image,
     alt: "links",
@@ -24210,8 +24211,10 @@ var Link = function Link(props) {
 };
 
 var Links = function Links() {
-  return _react.default.createElement("div", null, _react.default.createElement("div", null, _links.default.map(function (LINKS) {
-    return _react.default.createElement(Links, {
+  return _react.default.createElement("div", {
+    id: "links"
+  }, _react.default.createElement("div", null, _links.default.map(function (LINKS) {
+    return _react.default.createElement(Link, {
       key: LINKS.id,
       links: LINKS
     });
@@ -24220,7 +24223,118 @@ var Links = function Links() {
 
 var _default = Links;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../data/links":"data/links.js"}],"components/App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../data/links":"data/links.js"}],"images/htmlcss.jpg":[function(require,module,exports) {
+module.exports = "/htmlcss.e1818e2e.jpg";
+},{}],"images/java.jpg":[function(require,module,exports) {
+module.exports = "/java.af99a9f4.jpg";
+},{}],"images/js.png":[function(require,module,exports) {
+module.exports = "/js.c156dff7.png";
+},{}],"images/php.png":[function(require,module,exports) {
+module.exports = "/php.170459c1.png";
+},{}],"images/react.png":[function(require,module,exports) {
+module.exports = "/react.75ca2bae.png";
+},{}],"images/sass.png":[function(require,module,exports) {
+module.exports = "/sass.872609a9.png";
+},{}],"images/spring-boot.png":[function(require,module,exports) {
+module.exports = "/spring-boot.59cb5226.png";
+},{}],"images/sql.jpg":[function(require,module,exports) {
+module.exports = "/sql.b2ffa315.jpg";
+},{}],"data/languages.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _htmlcss = _interopRequireDefault(require("../images/htmlcss.jpg"));
+
+var _java = _interopRequireDefault(require("../images/java.jpg"));
+
+var _js = _interopRequireDefault(require("../images/js.png"));
+
+var _php = _interopRequireDefault(require("../images/php.png"));
+
+var _react = _interopRequireDefault(require("../images/react.png"));
+
+var _sass = _interopRequireDefault(require("../images/sass.png"));
+
+var _springBoot = _interopRequireDefault(require("../images/spring-boot.png"));
+
+var _sql = _interopRequireDefault(require("../images/sql.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var LANGUAGES = [{
+  id: 1,
+  image: _java.default
+}, {
+  id: 2,
+  image: _js.default
+}, {
+  id: 3,
+  image: _react.default
+}, {
+  id: 4,
+  image: _php.default
+}, {
+  id: 5,
+  image: _htmlcss.default
+}, {
+  id: 6,
+  image: _sass.default
+}, {
+  id: 7,
+  image: _springBoot.default
+}, {
+  id: 8,
+  image: _sql.default
+}];
+var _default = LANGUAGES;
+exports.default = _default;
+},{"../images/htmlcss.jpg":"images/htmlcss.jpg","../images/java.jpg":"images/java.jpg","../images/js.png":"images/js.png","../images/php.png":"images/php.png","../images/react.png":"images/react.png","../images/sass.png":"images/sass.png","../images/spring-boot.png":"images/spring-boot.png","../images/sql.jpg":"images/sql.jpg"}],"components/Languages.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _languages = _interopRequireDefault(require("../data/languages"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Language = function Language(props) {
+  var image = props.language.image;
+  return _react.default.createElement("span", null, _react.default.createElement("img", {
+    src: image,
+    alt: "languages",
+    style: {
+      width: 100,
+      height: 70,
+      margin: 5
+    }
+  }));
+};
+
+var Languages = function Languages() {
+  return _react.default.createElement("div", {
+    id: "lang"
+  }, _react.default.createElement("div", null, _languages.default.map(function (LANGUAGES) {
+    return _react.default.createElement(Language, {
+      key: LANGUAGES.id,
+      language: LANGUAGES
+    });
+  })));
+};
+
+var _default = Languages;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../data/languages":"data/languages.js"}],"images/kevan.jpg":[function(require,module,exports) {
+module.exports = "/kevan.aa5fe30a.jpg";
+},{}],"components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24233,6 +24347,10 @@ var _react = _interopRequireWildcard(require("react"));
 var _Nav = _interopRequireDefault(require("./Nav"));
 
 var _Links = _interopRequireDefault(require("./Links"));
+
+var _Languages = _interopRequireDefault(require("./Languages"));
+
+var _kevan = _interopRequireDefault(require("../images/kevan.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24272,13 +24390,18 @@ function (_Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("h1", {
+      return _react.default.createElement("div", null, _react.default.createElement("div", {
         id: "name"
-      }, "Kevan Barter"), _react.default.createElement(_Nav.default, null), _react.default.createElement("div", {
+      }, _react.default.createElement("h1", null, "Kevan Barter")), _react.default.createElement(_Nav.default, null), _react.default.createElement("div", {
         id: "bio"
-      }, _react.default.createElement("p", {
+      }, _react.default.createElement("h2", null, "Software Engineer", _react.default.createElement("a", {
+        href: "src/data/Kevan_Barter_Resume.pdf",
+        target: "_blank"
+      }, _react.default.createElement("button", {
+        id: "Resume"
+      }, "Resume")), _react.default.createElement(_Links.default, null)), _react.default.createElement("hr", null), _react.default.createElement("p", {
         id: "info"
-      }, "I am a Certified Scrum Master with my Bachelors degree in Software Development. I enjoy all aspects of Software Development, I have a strong foundation in back/front end development. I've worked on projects in an Agile environment and always brought a positive attitude to the team. I also enjoy learning new technologies and solving problems. My Full Stack skills is what sets me apart as I'll be able to solve problems on the front end and back end. I\u2019m looking for a Software Engineering job where I can continue to grow my skills.")));
+      }, _react.default.createElement("strong", null, "I am a Certified Scrum Master with my Bachelors degree in Software Development. "), "I enjoy all aspects of Software Development, I have a strong foundation in back/front end development. I've worked on projects in an Agile environment and always brought a positive attitude to the team. I also enjoy learning new technologies and solving problems. My Full Stack skills is what sets me apart as I'll be able to solve problems on the front end and back end. I\u2019m looking for a Software Engineering job where I can continue to develop my skills."), _react.default.createElement("hr", null), _react.default.createElement("h3", null, "Skills: ", _react.default.createElement(_Languages.default, null))));
     }
   }]);
 
@@ -24287,7 +24410,7 @@ function (_Component) {
 
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Nav":"components/Nav.js","./Links":"components/Links.js"}],"index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Nav":"components/Nav.js","./Links":"components/Links.js","./Languages":"components/Languages.js","../images/kevan.jpg":"images/kevan.jpg"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -24328,7 +24451,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57151" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55492" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

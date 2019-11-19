@@ -8,7 +8,7 @@ const Link = props => {
     return(
         <span>
             <span>
-                <a href={link}>
+                <a href={link} target='_blank'>
                     <img src={image} alt='links' style={{ width: 50, height: 50, margin: 10 }}/>
                 </a>
             </span>
@@ -17,11 +17,11 @@ const Link = props => {
 }
 
 const Links = () => (
-    <div>
+    <div id="links">
         <div>
             {
                 LINKS.map(LINKS =>(
-                    <Links key={LINKS.id} links={LINKS}/>
+                    <Link key={LINKS.id} links={LINKS}/>
                 ))
             }
         </div>
