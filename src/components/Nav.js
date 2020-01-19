@@ -7,9 +7,11 @@ class Nav extends Component {
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/portfolio">Portfolio</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </div>
+                </ul><br />
+                <h2 class='contact'>Reach me at:</h2>
+                <h3 class='contact'>kcbarter@msn.com</h3>
+                <h3 class='contact'>(360)402-9986</h3>
+            </div> 
         )
     }
 }

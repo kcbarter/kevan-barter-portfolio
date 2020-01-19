@@ -2,12 +2,12 @@
   "name": "kevan-barter-portfolio",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https//localhost:1235",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.2.3",
     "axios": "^0.19.1",
     "bootstrap": "^4.4.1",
     "emailjs-com": "^2.4.1",
+    "gh-pages": "^2.2.0",
     "history": "^4.7.2",
     "live-server": "^1.2.1",
     "nodemailer": "^6.4.2",
