@@ -59861,29 +59861,7 @@ function (_Component) {
     value: function render() {
       return _react.default.createElement("div", null, _react.default.createElement("h1", {
         id: "name"
-      }, "Kevan C. Barter"), _react.default.createElement(_Nav.default, null), _react.default.createElement("div", {
-        id: "contactForm"
-      }, _react.default.createElement("form", {
-        onSubmit: this.handleSubmit
-      }, _react.default.createElement("div", null, _react.default.createElement("label", {
-        for: "name"
-      }, "Name"), _react.default.createElement("input", {
-        type: "text",
-        name: "name",
-        onChange: this.handleChange
-      })), _react.default.createElement("div", null, _react.default.createElement("label", {
-        for: "email"
-      }, "Email"), _react.default.createElement("input", {
-        type: "email",
-        name: "email",
-        onChange: this.handleChange
-      })), _react.default.createElement("div", null, _react.default.createElement("label", {
-        for: "message"
-      }, "Message"), _react.default.createElement("input", {
-        type: "textarea",
-        name: "message",
-        onChange: this.handleChange
-      })), _react.default.createElement("button", null, "Submit"))));
+      }, "Kevan C. Barter"), _react.default.createElement(_Nav.default, null));
     }
   }]);
 
@@ -59954,7 +59932,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50199" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50592" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
