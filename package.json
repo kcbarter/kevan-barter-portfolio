@@ -2,7 +2,7 @@
   "name": "kevan-barter-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kcbarter.github.io/kevan-barter-portfolio",
+  "homepage": "https://kcbarter.github.io/kevan-barter-portfolio/",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.2.3",
     "axios": "^0.19.1",
