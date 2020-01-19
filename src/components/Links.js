@@ -9,7 +9,7 @@ const Link = props => {
         <span>
             <span>
                 <a href={link} target='_blank'>
-                    <img src={image} alt='links' style={{ width: 50, height: 50, margin: 10 }}/>
+                    <img id="image" src={image} alt='links' style={{ width: 50, height: 50, margin: 10 }}/>
                 </a>
             </span>
         </span>

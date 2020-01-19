@@ -2,27 +2,35 @@ body{
   background-color: rgb(73,66,66);
 }
 
-/* #pic{
-  padding-right: .5em;
-  border-radius: 50%;
-  width: 50%;
-} */
-
 #name{
   font-family: 'Times New Roman', Times, serif;
   color: blue;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3.5em;
   clear: both;
 }
 
+#Resume, #GitHub{
+  background-color: white;
+  border-collapse: black;
+  font-size: .8em;
+  padding: .2em;
+  margin-left: .2em;
+}
+
+#Resume:hover, #GitHub:hover{
+  background-color: black;
+  color: white;
+}
 
 #nav{
+  position: fixed;
   float: left;
   width: 20vw;
 }
 
-#bio{
+#bio, #portfolio, #contactForm {
+  margin-left: 20vw;
   width: 70vw;
   float: left;
   font-size: 1.3em;
@@ -34,13 +42,43 @@ body{
   float: right;
 }
 
+#image:hover{
+  transform: scale(1.5);
+}
+
 ul {
   list-style-type: none;
-  color: white;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 1.5em;
 }
 
-li:hover{
+a {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a:hover{
   color: red;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+.project {
+  width: 20em;
+  height: 12em;
+  float: left;
+  padding-right: 2em;
+}
+
+.center{
+  text-align: center;
+}
+
+#SeaJug, #khalsgc {
+  padding-bottom: 3em;
+}
+
+#StJamesOutreach {
+  padding-bottom: 3em;
 }

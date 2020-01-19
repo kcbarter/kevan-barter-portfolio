@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Nav from './Nav';
 import Links from './Links';
 import Languages from './Languages';
-import Kevan from '../images/kevan.jpg';
+import Resume from '../data/Kevan_Barter_Resume.pdf';
 
 class App extends Component{
  
@@ -10,14 +10,11 @@ class App extends Component{
     
     return(
       <div>
-        <div id="name">
-          {/* <img id='pic' src={Kevan} alt='Kevan'></img> */}
-          <h1>Kevan Barter</h1>
-        </div>
+        <h1 id="name">Kevan C. Barter</h1>
         <Nav />
         <div id="bio">
-          <h2>Software Engineer
-            <a href="src/data/Kevan_Barter_Resume.pdf" target="_blank">
+          <h2>Software Engineer:
+            <a href={Resume} target="_blank">
               <button id="Resume">Resume</button>
             </a> 
             <Links />
@@ -34,7 +31,6 @@ class App extends Component{
           <hr/>
           <h3>Skills: <Languages /></h3>
         </div>
-
       </div>
     )
   }
