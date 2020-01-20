@@ -2,7 +2,7 @@
   "name": "kevan-barter-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kcbarter.github.io/kevan-barter-portfolio",
+  "homepage": "https://kcbarter.github.io/kevan-barter-portfolio/portfolio",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.2.3",
     "axios": "^0.19.1",
@@ -23,8 +23,8 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "parcel build src/index.html",
+    "deploy": "gh-pages -d dist",
+    "build": "parcel build dist/index.html --public-url ./",
     "start": "npm run build && live-server dist"
   },
   "devDependencies": {
