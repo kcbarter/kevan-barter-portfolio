@@ -37212,6 +37212,8 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
+var _reactRouterDom = require("react-router-dom");
+
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
@@ -37250,10 +37252,10 @@ function (_Component) {
     value: function render() {
       return _react.default.createElement("div", {
         id: "nav"
-      }, _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("a", {
-        href: "/"
-      }, "Home")), _react.default.createElement("li", null, _react.default.createElement("a", {
-        href: "/portfolio"
+      }, _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement(_reactRouterDom.Link, {
+        to: "/"
+      }, "Homee")), _react.default.createElement("li", null, _react.default.createElement(_reactRouterDom.Link, {
+        to: "/portfolio"
       }, "Portfolio"))), _react.default.createElement("br", null), _react.default.createElement("h2", {
         class: "contact"
       }, "Reach me at:"), _react.default.createElement("h3", {
@@ -37269,7 +37271,7 @@ function (_Component) {
 
 var _default = Nav;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"images/SeaJugProject.PNG":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js"}],"images/SeaJugProject.PNG":[function(require,module,exports) {
 module.exports = "/SeaJugProject.2a616a43.PNG";
 },{}],"images/KgcProject.JPG":[function(require,module,exports) {
 module.exports = "/KgcProject.ba3a65bf.JPG";
@@ -37736,7 +37738,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var history = (0, _createBrowserHistory.default)();
 
-_reactDom.default.render(_react.default.createElement(_reactRouterDom.Router, {
+_reactDom.default.render(_react.default.createElement(_reactRouterDom.HashRouter, {
   history: history
 }, _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
   exact: true,
@@ -37745,7 +37747,14 @@ _reactDom.default.render(_react.default.createElement(_reactRouterDom.Router, {
 }), _react.default.createElement(_reactRouterDom.Route, {
   path: "/portfolio",
   component: _Portfolio.default
-}))), document.getElementById('root'));
+}))), document.getElementById('root')); // export default () => (
+//     <HashRouter>
+//         <Switch>
+//             <Route exact path='/' component={App} />
+//             <Route exact path='/portfolio' component={Portfolio} />
+//         </Switch>
+//     </HashRouter>
+// );
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","history/createBrowserHistory":"../node_modules/history/createBrowserHistory.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","./index.css":"index.css","./components/Portfolio":"components/Portfolio.js","./components/App":"components/App.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -37773,7 +37782,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53972" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55386" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
