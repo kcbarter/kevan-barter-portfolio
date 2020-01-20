@@ -37747,14 +37747,7 @@ _reactDom.default.render(_react.default.createElement(_reactRouterDom.HashRouter
 }), _react.default.createElement(_reactRouterDom.Route, {
   path: "/portfolio",
   component: _Portfolio.default
-}))), document.getElementById('root')); // export default () => (
-//     <HashRouter>
-//         <Switch>
-//             <Route exact path='/' component={App} />
-//             <Route exact path='/portfolio' component={Portfolio} />
-//         </Switch>
-//     </HashRouter>
-// );
+}))), document.getElementById('root'));
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","history/createBrowserHistory":"../node_modules/history/createBrowserHistory.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","./index.css":"index.css","./components/Portfolio":"components/Portfolio.js","./components/App":"components/App.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -37782,7 +37775,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56966" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58134" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
