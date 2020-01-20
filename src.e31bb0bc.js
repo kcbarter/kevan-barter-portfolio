@@ -37254,7 +37254,7 @@ function (_Component) {
         id: "nav"
       }, _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement(_reactRouterDom.Link, {
         to: "/"
-      }, "Homee")), _react.default.createElement("li", null, _react.default.createElement(_reactRouterDom.Link, {
+      }, "Home")), _react.default.createElement("li", null, _react.default.createElement(_reactRouterDom.Link, {
         to: "/portfolio"
       }, "Portfolio"))), _react.default.createElement("br", null), _react.default.createElement("h2", {
         class: "contact"
@@ -37782,7 +37782,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55386" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56966" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
