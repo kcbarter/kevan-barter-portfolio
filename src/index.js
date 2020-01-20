@@ -18,12 +18,3 @@ ReactDOM.render(
     </Router>, 
     document.getElementById('root')
 );
-
-// export default () => (
-//     <HashRouter>
-//         <Switch>
-//             <Route exact path='/' component={App} />
-//             <Route exact path='/portfolio' component={Portfolio} />
-//         </Switch>
-//     </HashRouter>
-// );
