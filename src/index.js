@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
-import { Router, Switch, Route } from 'react-router-dom';
+import { HashRouter ,Router, Switch, Route } from 'react-router-dom';
 import './index.css';
 import Portfolio from './components/Portfolio';
 import App from './components/App';
@@ -9,11 +9,11 @@ import App from './components/App';
 const history = createBrowserHistory();
 
 ReactDOM.render(
-    <Router history={history}>
+    <HashRouter history={history}>
         <Switch>
             <Route exact={true} path='/' component={App} />
             <Route path='/portfolio' component={Portfolio} />
         </Switch>
-    </Router>, 
+    </HashRouter>, 
     document.getElementById('root')
 );
