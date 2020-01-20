@@ -6,7 +6,7 @@ class Nav extends Component {
         return(
             <div id="nav">
                 <ul>
-                    <li><Link to="/">Homee</Link></li>
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/portfolio">Portfolio</Link></li>
                 </ul><br />
                 <h2 class='contact'>Reach me at:</h2>
