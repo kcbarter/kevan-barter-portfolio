@@ -10,7 +10,7 @@ import App from './components/App';
 const history = createBrowserHistory();
 
 ReactDOM.render(
-    <Router history={history}>
+    <Router history={history} basename='/'>
         <Switch>
             <Route exact={true} path='/' component={App} />
             <Route path='/portfolio' component={Portfolio} />
