@@ -37739,7 +37739,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var history = (0, _createBrowserHistory.default)();
 
 _reactDom.default.render(_react.default.createElement(_reactRouterDom.HashRouter, {
-  history: history
+  history: history,
+  basename: "/"
 }, _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
   exact: true,
   path: "/",
@@ -37775,7 +37776,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61612" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54191" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
