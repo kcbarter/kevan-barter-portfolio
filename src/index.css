@@ -4,7 +4,7 @@ body{
 
 #name{
   font-family: 'Times New Roman', Times, serif;
-  color: blue;
+  color: yellow;
   text-align: center;
   font-size: 3.5em;
   clear: both;
@@ -77,10 +77,12 @@ a:link{
 
 #SeaJug, #khalsgc {
   padding-bottom: 3em;
+  clear: both;
 }
 
 #StJamesOutreach {
   padding-bottom: 3em;
+  clear: both;
 }
 
 .contact {
