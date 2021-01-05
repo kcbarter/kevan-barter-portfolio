@@ -5,7 +5,7 @@
   "homepage": "https://kcbarter.github.io/kevan-barter-portfolio",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.2.3",
-    "axios": "^0.19.1",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "core-js": "^2.6.11",
     "deasync": "^0.1.19",
